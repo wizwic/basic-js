@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css" class="css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <section class="container container--main">
+        <div id="clock-content" class="item item--clock">
+            <h1 id="clock">00:00:00</h1>
+        </div>
+        <!-- .item--clock end -->
+
+        <div class="login item item--login">
+            <form id="login-form" class="hidden">
+                <input required type="text" maxlength="15" placeholder="What is your name?">
+                <button type="submit">Log in</button>
+            </form>
+            <h2 id="greeting" class="h2 hidden"></h2>
+        </div>
+        <!-- .item--login end -->
+
+        <dl class="weather item item--weather">
+            <dt>Today’s weather</dt>
+            <dd></dd>
+        </dl>
+        <!-- .item--weather end -->
+
+        <dl class="city item item--city">
+            <dt>Your location</dt>
+            <dd></dd>
+        </dl>
+        <!-- .item--city end -->
+
+        <form id="todo-form" class="todo item item--todo">
+            <input type="text" autofocus maxlength="50" placeholder="Write a To Do and press Enter." required>
+        </form>
+        <!-- .item--todo end -->
+
+        <div class="todo-list item item--todo-list">
+            <ul id="todo-list">
+            </ul>
+        </div>
+
+        <!-- .item--todo-list end -->
+
+        <div id="quote" class="item item--quote">
+            <span></span>
+            <span></span>
+        </div>
+        <!-- .item--todo-list end -->
+    </section>
+    <!-- .container end -->
+    
+    <script src="js/config.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
