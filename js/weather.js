@@ -1,6 +1,8 @@
 const API_KEY = "388b3f3251b60d9b36e8929106c212aa";
 const sample = config.apiKey;
 
+console.log(typeof sample);
+
 // 성공했을 때
 function onGeoOk(position) {
     // 위도값
